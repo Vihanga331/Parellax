@@ -57,6 +57,11 @@ main img {
    display: none;
 }
 
+#blank {
+   z-index: 100;
+   margin-top: 350px;
+}
+
 /*------- Buttons--------*/
 
 header {
