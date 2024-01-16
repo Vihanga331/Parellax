@@ -1,0 +1,157 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   padding-bottom: 1100px;
+   background: #ffffff;
+   font-family: 'Roboto',Arial;
+}
+
+main img {
+   position: absolute;
+   width: 100vw;
+   height: auto;
+}
+#bottom1 {
+   z-index: 30;
+}
+#bottom2 {
+   z-index: 25;
+   /* top: -9vh; */
+}
+#sun {
+   z-index: 20;
+}
+#top1 {
+   z-index: 10;
+   animation: 2s img-animation;
+}
+#top2 {
+   z-index: 15;
+   animation: 1s img-animation;
+}
+
+.content {
+   position: absolute;
+   top: 676px;
+   z-index: 26;
+   background-color: #3A503B;
+   width: 100%;
+   height: 600px;
+   display: flex;
+   align-items: flex-end;
+}
+
+
+/* #3A503B */
+
+#note {
+   z-index: 80;
+   display: none;
+}
+
+/*------- Buttons--------*/
+
+header {
+   position: absolute;
+   width: 100vw;
+   height: 80px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   display: flex;
+   padding: 0;
+   z-index: 50;
+}
+
+header {
+   margin-top: 30px;
+}
+
+.logo {
+   color: white;
+   font-weight: bolder;
+   font-size: 50px;
+   width: 10vw;
+   margin-left: 5vw;
+   display: flex;
+   align-items: center;
+   animation: button-animation 3s ease-out;
+}
+.menu-bar {
+   animation: button-animation 3s ease-out;
+   width: 100%;
+   list-style: none;
+   display: flex;
+   gap: 80px;
+   justify-content: right;
+   align-items: center;
+}
+.menu-bar li {
+   border: solid white 2px;
+   padding: 12px;
+   border-radius: 18px;
+   font-weight: bold;
+   font-size: 18px;
+   color: white;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.menu-bar li:last-child {
+   margin-right: 30px;   
+}
+
+.menu-bar li:hover {
+   background: white;
+   color: #01CD07;
+   border: none;
+   padding: 14px;
+   font-size: 24px;
+}
+
+/*------Animations--------*/
+
+@keyframes img-animation {
+   from {
+      top: -100px;
+      opacity: 0.2;
+   }
+   to {
+      top: 0px;
+      opacity: 1;
+   }
+}
+@keyframes button-animation {
+   0% {
+      opacity: 0;
+   }
+   50% {
+      opacity: 0;
+   }
+   60% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+/*------ @Media ------*/
+
+@media only screen and (max-width: 1200px) {
+   main,
+   header,
+   footer,
+   .content {
+      display: none;
+   }
+   #note {
+      display: absolute;
+   }
+}
