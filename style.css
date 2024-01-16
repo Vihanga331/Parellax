@@ -38,7 +38,7 @@ main img {
    animation: 1s img-animation;
 }
 
-.content {
+/*.content {
    position: absolute;
    top: 676px;
    z-index: 26;
@@ -49,9 +49,6 @@ main img {
    align-items: flex-end;
 }
 
-
-/* #3A503B */
-
 #note {
    z-index: 80;
    display: none;
@@ -59,7 +56,7 @@ main img {
 
 #blank {
    z-index: 100;
-   margin-top: 350px;
+   margin-top: 350px;*/
 }
 
 /*------- Buttons--------*/
@@ -152,8 +149,8 @@ header {
 @media only screen and (max-width: 1080px) {
    main,
    header,
-   footer,
-   .content {
+   footer
+     {
       display: none;
    }
 }
