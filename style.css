@@ -149,11 +149,11 @@ header {
 }
 /*------ @Media ------*/
 
-/*@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
    main,
    header,
    footer,
    .content {
       display: none;
    }
-}*/
+}
